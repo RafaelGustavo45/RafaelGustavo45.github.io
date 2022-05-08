@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste_bomba</title>
+</head>  <!-- as bombas estão em filho 5,15 e 25-->
+    <BODY>
+        <main>
+            <div class="container">
+               <div class="filho1"></div>
+               <div class="filho3"></div>
+               <div class="filho4"></div>
+               <div class="filho5"></div>
+               <div class="filho6"></div>
+               <div class="filho7"></div>
+               <div class="filho8"></div>
+               <div class="filho9"></div>
+               <div class="filho10"></div>
+               <div class="filho11"></div>
+               <div class="filho12"></div>
+               <div class="filho13"></div>
+               <div class="filho14"></div>
+               <div class="filho15"></div>
+               <div class="filho16"></div>
+               <div class="filho17"></div>
+               <div class="filho18"></div> 
+               <div class="filho19"></div> 
+               <div class="filho20"></div> 
+               <div class="filho21"></div> 
+               <div class="filho22"></div> 
+               <div class="filho23"></div>
+               <div class="filho24"></div>
+               <div class="filho25"></div>
+               <div class="filho26"></div>
+               <div class="filho27"></div>                            <!-- feito por rafael gustavo reinert --> 
+            </div>
+          
+        <h1 class="instru"> instrução </h1>  <!--como jogar-->
+             <p class="instru"> quadrado cinza=não encima, quadrado branco=encima, quadrado verde=sem bomba, quadrado vermelho=com bomba</p>
+            
+        </main>
+        <style>
+
+            .instru {
+               color:rgb(0, 0, 0)
+            }
+            .container{
+                width: 500px;
+                height: 500px;
+                color: yellow;
+                font-size: 20px;
+                border: 5px solid rgb(0, 0, 0);
+                text-align: center;
+                float: center;}
+            .filho1{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;
+            }
+            .filho2{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;
+            }
+            .filho3{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;
+            }
+            .filho4{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;
+            }
+            .filho5{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+
+            .filho6{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+
+            .filho7{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                border: 3px solid rgb(236, 253, 0);
+                float: left;
+                box-sizing: border-box;
+                background-color: gray;}
+
+            .filho8{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho9{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho10{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho11{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho12{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho13{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho15{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho16{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho17{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho18{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho19{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho20{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho21{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho22{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho23{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho24{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho25{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho26{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+            .filho27{
+                height: 100px;
+                width: 100px;
+                color: gray;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: gray;}
+
+                /* embaixo é o efeito do mouse*/
+                .filho1:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho2:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho3:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho4:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho5:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho6:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho7:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho8:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho9:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                .filho10:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                .filho11:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                .filho12:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                .filho13:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                .filho14:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                .filho15:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                .filho16:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                .filho17:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho18:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho19:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho20:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho21:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho22:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho23:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho24:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho26:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho27:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+
+                .filho25:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                .filho17:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                .filho8:hover{
+                height: 100px;
+                width: 100px;
+                color: whitesmoke;
+                font-size: 30px;
+                float: left;
+                border: 3px solid rgb(236, 253, 0);
+                box-sizing: border-box;
+                background-color: whitesmoke;}
+                /* acima é o efeito ao passar o mouse */
+
+                /* abaixo são as bombas */
+                .filho5:active{
+                background-color: red;    
+                }
+                .filho15:active{
+                background-color:red;
+                }
+                .filho25:active{
+                background-color:red;    
+                }
+                /*acima são as bombas*/
+
+                /* abaixo são os locais limpos ao clicar */
+                .filho1:active{
+                background-color:greenyellow;    
+                }
+                .filho2:active{
+                background-color:greenyellow;    
+                }
+                .filho3:active{
+                background-color:greenyellow;    
+                }
+                .filho4:active{
+                background-color:greenyellow;    
+                }
+                .filho6:active{
+                background-color:green;    
+                }
+                .filho7:active{
+                background-color:green;    
+                }
+                .filho8:active{
+                background-color:green;    
+                }
+                .filho9:active{
+                background-color:green;    
+                }
+                .filho10:active{
+                background-color:green;    
+                }
+                .filho11:active{
+                background-color:green;    
+                }
+                .filho12:active{
+                background-color:green;    
+                }
+                .filho13:active{
+                background-color:green;    
+                }
+                .filho14:active{
+                background-color:green;    
+                }
+                .filho16:active{
+                background-color: green;    
+                }
+                .filho17:active{
+                background-color:green;    
+                }
+                .filho18:active{
+                background-color: green;    
+                }
+                .filho19:active{
+                background-color: green;    
+                }
+                .filho20:active{
+                background-color: green;    
+                }
+                .filho21:active{
+                background-color: green;    
+                }
+                .filho22:active{
+                background-color: green;    
+                }
+                .filho23:active{
+                background-color: green;    
+                }
+                .filho24:active{
+                background-color: green;    
+                }
+                .filho26:active{
+                background-color:green;    
+                }
+                .filho27:active{
+                background-color:green;    
+                }
+                /*acima são os locais limpos ao clicar*/
+
+
+        </style>
+
+    </body>
+</html
