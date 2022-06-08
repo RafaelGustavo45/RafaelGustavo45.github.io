@@ -78,7 +78,7 @@
         </div>
       </form>
       <div>
-        <label>Situação:</label>
+        <label>Situação exame:</label>
         <input type="text" id="ExameSituacao" placeholder="Situação" disabled>
       </div>
     </div>
