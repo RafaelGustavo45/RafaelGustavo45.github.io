@@ -1,75 +1,152 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Calculadora de Notas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 </head>
-<body><h1> digite as notas</h1>
 
-    <p> nota 1</p><input type="number" id="nota1"> </input>
+<body >
+  <nav >
+    <div >
+      <span>Calculadora de Notas</span>
+    </div>
+  </nav>
 
+  <div>
+    <form>
+      <div >
+        <div >
+          <div >
+            <h1>total notas</h1>
+          </div>
+          <div>
+            <label>1° bimestre</label>
+            <input type="number" id="B1_N1">
+          </div>
+          <div >
+            <label>2° bimestre</label>
+            <input type="number" id="B2_N1">
+          </div>
 
-    <p> nota 2</p><input type="number" id="nota2"> </input>
+          <div>
+            <label>Quantidade de Aulas:</label>
+            <input type="number"  id="qaulas" >
+          </div>
+          <div>
+            <label>Faltas:</label>
+            <input type="number" id="qfaltas">
+          </div>
 
-    <button type="button" onclick="media();">calcular notas</button>
-
-    <h1> digite aulas totais e faltas</h1>
-
-    <p> faltas</p><input type="number" id="faltas"> </input>
-
-
-    <p> aulas totais</p><input type="number" id="dias"> </input>
-
-    <button type="button" onclick="frequencia();">calcular frequencia</button>
-
-    <button type="button" onclick="verificar1();">verificar antes da recuperação</button>
-
-    <h1> caso tenha ficado em recuperação</h1>
-
-    <p> nota do exame</p><input type="number" id="exame"> </input>
-
-    <button type="button" onclick="exame();">calcular Recuperação</button>
-    <button type="button" onclick="verificar2();">situação da recuperação </button>
-</body>
-</html>
-
-<script>
-
-
-        function media(){
-        let nota1 = parseFloat(document.getElementById("nota1").value);
-        let nota2 = parseFloat(document.getElementById("nota2").value);
-        var media1 = (nota1+nota2)/2;
-        alert(media1) }
     
-        function frequencia(){
-        let faltas = parseFloat(document.getElementById("faltas").value);
-        let dias = parseFloat(document.getElementById("dias").value);
-        frequenciado = (dias/faltas)*1;
-        alert(frequenciado) }
+      </div>
+      <div>
+        <div><br></div>
+        <input type="button"  value="Calcular" onclick="calculo()">
+      </div>
+    </form>
+    <div>
+      <div>
+        <label>Média do Aluno:</label>
+        <input type="number"  id="resultado" placeholder="Média do Aluno" disabled>
+      </div>
+      <div>
+        <label>Frequência de Participação:</label>
+        <input type="number"  id="resultado_freq" placeholder="Frequência do Aluno"
+          disabled>
+      </div>
+      <div >
+        <label>Situação:</label>
+        <input type="text"  id="situacao" placeholder="Situação"  disabled>
+      </div>
+    </div>
+    <div id="ex">
+      <form>
+        <div>
+          <div >
+            <h1>Exame</h1>
+          </div>
+          <div>
+            <label>Nota do Exame:</label>
+            <input type="number"  id="exame_nota" placeholder="Nota do Exame" required>
+          </div>
+          <div>
+            <br>
+            <input type="button"  value="Calcular_Exame" onclick="exames()">
+          </div>
+        </div>
+      </form>
+      <div>
+        <label>Situação:</label>
+        <input type="text" id="ExameSituacao" placeholder="Situação" disabled>
+      </div>
+    </div>
+  </div>
+  </div>
+<footer>
+  <div>
+  </div>
+</footer>
+</body>
 
-        function exame(){
-        let media_exame = parseFloat(document.getElementById("exame").value);
-        let media = parseFloat(document.getelementbyid("media").value);
-        exame1 = (media+media_exame)/2;
-        alert(exame1)}
+</html>
+<script>
+function calculo() {
+    /* --Calculo das Notas--- */
+    var notas = (parsefloat(B1_N1.value))+(parsefloat(B2_N1.value))/2;
+    var total = 0;
+    total = notas
+    
+    resultado.value = total.toFixed(1)
+
+    /* ---Calculo da Frequencia-- */
+
+    var freq = ((parseInt(qaulas.value) - parseInt(qfaltas.value)) / parseInt(qaulas.value)) * 100;
+    var total1 = 0;
+    total1= freq
+
+    resultado_freq.value = total1.toFixed(2)
+
+    /* ----Teste de Aprovação-- */
 
 
-function verificar1(){
-    if(frequenciado < 75)
-       alert("reprovado por baixa frenquencia");
-   if (frequenciado >=75) and (media1 >=7)
-       alert("o aluno foi aprovado");
-    if (frequenciado >= 75) and (media1 <7)
-       alert("o aluno esta em recuperação");}
+    
+     if ((resultado.value >= 7) && (resultado_freq.value >= 75)) {
+        situacao.value = "Aluno aprovado!";
+        document.getElementById('ex').style.visibility = 'hidden';
+        document.getElementById('situacao').style.backgroundColor ="green";
+    } else if (resultado_freq.value <= 75) {
+        situacao.value = "Aluno Reprovado por falta!";
+        document.getElementById('ex').style.visibility = 'hidden';
+        document.getElementById('situacao').style.backgroundColor ="red";
 
-function verificar2(){
-    if(exame1 >= 5)
-       alert("o aluno passou pela recuperação");
-    if(exame1 < 5)
-       alert("o aluno reprovou")}
+        
+    } else {
+        situacao.value = "Aluno em exame!";
+        document.getElementById('ex').style.visibility = 'visible';
+        document.getElementById('situacao').style.backgroundColor ="yellow";
+        document.getElementById('exame').focus();
+
+
+    }
+
+}
+
+function exames() {
+    var exexame = ((parseFloat(resultado.value) + parseFloat(exame_nota.value)) / 2)}
+    
+    
+     if (exexame > 5) {
+        ExameSituacao.value = "Aluno Aprovado na recuperação!"
+        document.getElementById('ExameSituacao').style.backgroundColor ="green";
+        document.getElementById('exame').focus();
+        
+    } else {
+        ExameSituacao.value = "Aluno Reprovado!"
+        document.getElementById('ExameSituacao').style.backgroundColor ="orange";
+        document.getElementById('exame').focus();
+    }
 
 
 
