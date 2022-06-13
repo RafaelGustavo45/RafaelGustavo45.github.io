@@ -7,21 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="button" onclick="chamar_api();">Chamar gato API</button>
-		<img id="img">
+    <button type="button" onclick="chamar_api();">Chamar cão</button>
+		<img id="img" ></img>
 
 </body>
 </html>
 
 <script> 
     function chamar_api(){
-        fetch('https://api.thecatapi.com/v1/images/search')
+        fetch('http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true')
           .then(response => response.json())
           .then(data => exibir_imagem(data));
        }
     
     function exibir_imagem(data){
-        document.getElementById("img").src = data.message;
+        document.getElementById("img").src = data[0];
     }
     
     </script> 
