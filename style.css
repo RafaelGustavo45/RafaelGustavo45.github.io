@@ -1,0 +1,36 @@
+* {
+    font-family: sans-serif;
+}
+
+body{
+    color: #333;
+    background: hsl(0, 0%, 98%);
+    width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 200px 1fr 100px;
+}
+
+ul{
+    list-style:armenian;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project{
+  border: 1px solid #696969;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+
+}
